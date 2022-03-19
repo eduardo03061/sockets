@@ -1,11 +1,11 @@
-import { appendNote, renderNotes, fillForm, onHandleSubmit } from "./ui.js";
-import { loadNotes, onNewNote, onSelected } from "./sockets.js";
+import {appendNote, renderNotes, fillForm, onHandleSubmit} from "./ui.js";
+import {loadNotes, onNewNote, onSelected} from "./sockets.js";
 
 // Load initial Notes
 window.addEventListener("DOMContentLoaded", () => {
-  loadNotes(renderNotes);
-  onNewNote(appendNote);
-  onSelected(fillForm);
+    loadNotes(renderNotes);
+    onNewNote(appendNote);
+    onSelected(fillForm);
 });
 
 // Save a new Note
